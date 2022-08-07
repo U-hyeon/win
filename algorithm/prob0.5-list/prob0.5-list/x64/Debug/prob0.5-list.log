@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\USER\source\repos\prob0.5-list\prob0.5-list\main.cpp(4,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+  prob0.5-list.vcxproj -> C:\Users\USER\source\repos\prob0.5-list\x64\Debug\prob0.5-list.exe
