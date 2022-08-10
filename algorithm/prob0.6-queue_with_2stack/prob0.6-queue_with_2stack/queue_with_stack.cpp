@@ -5,22 +5,20 @@ stack stack2;
 
 void enqueue(int n) //stack 2를 이용하여 stack1에 큐처럼 저장
 {
-	int i;
+	int i = stack1.e;
 	
-	for (;;)
+	for (;i>0;i--)
 	{
-		i = stack1.pop();
-		if (i == -1) break;
-		stack2.push(i);
+		stack2.push(stack1.pop());
 	}
 
 	stack1.push(n);
 
-	for (;;)
+	i = stack2.e;
+
+	for (; i > 0; i--)
 	{
-		i = stack2.pop();
-		if (i == -1) break;
-		stack1.push(i);
+		stack1.push(stack2.pop());
 	}
 }
 

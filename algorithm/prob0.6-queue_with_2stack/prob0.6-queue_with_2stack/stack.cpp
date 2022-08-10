@@ -2,7 +2,7 @@
 
 void stack::push(int n)
 {
-	if (e == n)
+	if (e == STACK_SIZE) //if (e == n) 로 작성하여 오류발생
 	{
 		printf("stack is full!\n");
 		return;

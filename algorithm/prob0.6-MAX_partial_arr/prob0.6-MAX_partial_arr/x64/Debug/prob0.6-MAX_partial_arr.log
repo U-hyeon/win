@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\USER\source\repos\prob0.6-MAX_partial_arr\prob0.6-MAX_partial_arr\main.cpp(12,6): warning C4101: 'part2' :참조되지 않은 지역 변수입니다.
+C:\Users\USER\source\repos\prob0.6-MAX_partial_arr\prob0.6-MAX_partial_arr\main.cpp(11,6): warning C4101: 'part1' :참조되지 않은 지역 변수입니다.
+C:\Users\USER\source\repos\prob0.6-MAX_partial_arr\prob0.6-MAX_partial_arr\main.cpp(48,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+  prob0.6-MAX_partial_arr.vcxproj -> C:\Users\USER\source\repos\prob0.6-MAX_partial_arr\x64\Debug\prob0.6-MAX_partial_arr.exe

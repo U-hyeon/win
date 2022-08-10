@@ -1,3 +1,2 @@
-﻿  main.cpp
-C:\Users\USER\source\repos\prob0.6-queue_with_2stack\prob0.6-queue_with_2stack\main.cpp(4,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+﻿  stack.cpp
   prob0.6-queue_with_2stack.vcxproj -> C:\Users\USER\source\repos\prob0.6-queue_with_2stack\x64\Debug\prob0.6-queue_with_2stack.exe
