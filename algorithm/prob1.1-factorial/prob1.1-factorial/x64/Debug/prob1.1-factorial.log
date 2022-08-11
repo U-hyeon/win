@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\USER\source\repos\prob1.1-factorial\prob1.1-factorial\main.cpp(38,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+  prob1.1-factorial.vcxproj -> C:\Users\USER\source\repos\prob1.1-factorial\x64\Debug\prob1.1-factorial.exe
