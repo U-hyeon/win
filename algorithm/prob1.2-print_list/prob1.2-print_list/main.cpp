@@ -78,6 +78,17 @@ void print_list(node_t* from)
 	print_list(from->next);
 }
 
+void print_list_reverse(node_t* from)
+{
+	if (from == NULL)
+	{
+		return;
+	}
+	print_list_reverse(from->next);
+	
+	printf("[%d] ", from->key);
+}
+
 void main()
 {
 	dequeue();
@@ -123,6 +134,7 @@ void main()
 	dequeue();
 	dequeue();
 
-	print_list(head);
+	//print_list(head);
+	print_list_reverse(head);
 }
 
