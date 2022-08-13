@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "prob1.4-fibonacci", "prob1.4-fibonacci\prob1.4-fibonacci.vcxproj", "{BFC3126A-DD33-414C-A1FD-42DDD772F751}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFC3126A-DD33-414C-A1FD-42DDD772F751}.Debug|x64.ActiveCfg = Debug|x64
+		{BFC3126A-DD33-414C-A1FD-42DDD772F751}.Debug|x64.Build.0 = Debug|x64
+		{BFC3126A-DD33-414C-A1FD-42DDD772F751}.Debug|x86.ActiveCfg = Debug|Win32
+		{BFC3126A-DD33-414C-A1FD-42DDD772F751}.Debug|x86.Build.0 = Debug|Win32
+		{BFC3126A-DD33-414C-A1FD-42DDD772F751}.Release|x64.ActiveCfg = Release|x64
+		{BFC3126A-DD33-414C-A1FD-42DDD772F751}.Release|x64.Build.0 = Release|x64
+		{BFC3126A-DD33-414C-A1FD-42DDD772F751}.Release|x86.ActiveCfg = Release|Win32
+		{BFC3126A-DD33-414C-A1FD-42DDD772F751}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {697C7D7D-0D2D-4555-B2F1-9FFC6DBAA24C}
+	EndGlobalSection
+EndGlobal

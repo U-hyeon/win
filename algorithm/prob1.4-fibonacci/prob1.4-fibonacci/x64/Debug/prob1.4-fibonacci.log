@@ -1,0 +1,7 @@
+﻿  main.cpp
+C:\Users\USER\source\repos\prob1.4-fibonacci\prob1.4-fibonacci\main.cpp(17,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+C:\Users\USER\source\repos\prob1.4-fibonacci\prob1.4-fibonacci\main.cpp(19,10): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 '__int64'입니다.
+C:\Users\USER\source\repos\prob1.4-fibonacci\prob1.4-fibonacci\main.cpp(19,10): message : 서식 문자열에서 '%lld'을(를) 사용하는 것이 좋습니다.
+C:\Users\USER\source\repos\prob1.4-fibonacci\prob1.4-fibonacci\main.cpp(19,10): message : 서식 문자열에서 '%Id'을(를) 사용하는 것이 좋습니다.
+C:\Users\USER\source\repos\prob1.4-fibonacci\prob1.4-fibonacci\main.cpp(19,10): message : 서식 문자열에서 '%I64d'을(를) 사용하는 것이 좋습니다.
+  prob1.4-fibonacci.vcxproj -> C:\Users\USER\source\repos\prob1.4-fibonacci\x64\Debug\prob1.4-fibonacci.exe
