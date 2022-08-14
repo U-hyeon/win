@@ -28,7 +28,7 @@ long long Fibonacci2(int n) //한번 계산한 값을 기억, 이후 동일과정생략
 	return memo[n] = Fibonacci2(n - 1) + Fibonacci2(n - 2);
 }
 
-long long Fibonacci3(int n) //non-recursive bottom up 방식의 계산
+long long Fibonacci3(int n) //matrix 연산을 이용한 bottom up 방식의 계산 O(log n)
 {
 	long long i, f_i, f_i_1, t;
 	if (n == 1 || n == 2)
