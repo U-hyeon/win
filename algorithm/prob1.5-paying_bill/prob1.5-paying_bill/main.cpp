@@ -1,27 +1,8 @@
 #include <stdio.h>
-
-// naive solution
-/* 
-void main()
-{
-	int bills[6]{ 1,2,5,10,20,50 };
-	int count = 0, money = 100, i0, i1, i2, i3, i4;
-
-	for (i0 = money; i0 >= 0; i0 -= bills[0])
-		for (i1 = i0; i1 >= 0; i1 -= bills[1])
-			for (i2 = i1; i2 >= 0; i2 -= bills[2])
-				for (i3 = i2; i3 >= 0; i3 -= bills[3])
-					for (i4 = i3; i4 >= 0; i4 -= bills[4])
-						if (i4 % bills[5] == 0)
-							count++;
-
-	printf("count = %d\n", count);
-}
-// answer 4562
-*/
+#define money 100
 
 int bills[6]{ 1,2,5,10,20,50 };
-int money = 100;
+int i;
 
 int solution(int target, int types)
 {
@@ -31,7 +12,7 @@ int solution(int target, int types)
 	int r=0;
 	int n = target / bills[types - 1]; //target을 넘지 않는 선에서, 최대단위의 지폐를 몇개까지 사용할 수 있는가
 
-	for (int i = 0; i <= n; i++)
+	for (i = 0; i <= n; i++)
 		r += solution(target - (i * bills[types - 1]), types - 1);
 	
 	return r;
