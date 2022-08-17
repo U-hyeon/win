@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\USER\source\repos\prob1.6-division_memo\prob1.6-division_memo\main.cpp(33,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+  prob1.6-division_memo.vcxproj -> C:\Users\USER\source\repos\prob1.6-division_memo\x64\Debug\prob1.6-division_memo.exe
