@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\USER\source\repos\prob1.7-Gray_code\prob1.7-Gray_code\main.cpp(12,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+  prob1.7-Gray_code.vcxproj -> C:\Users\USER\source\repos\prob1.7-Gray_code\x64\Debug\prob1.7-Gray_code.exe
