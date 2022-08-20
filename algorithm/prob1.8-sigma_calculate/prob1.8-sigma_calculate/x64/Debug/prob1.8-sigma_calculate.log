@@ -1,0 +1,6 @@
+﻿  main.cpp
+C:\Users\USER\source\repos\prob1.8-sigma_calculate\prob1.8-sigma_calculate\main.cpp(11,11): warning C4244: '+=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\USER\source\repos\prob1.8-sigma_calculate\prob1.8-sigma_calculate\main.cpp(21,20): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\USER\source\repos\prob1.8-sigma_calculate\prob1.8-sigma_calculate\main.cpp(25,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+C:\Users\USER\source\repos\prob1.8-sigma_calculate\prob1.8-sigma_calculate\main.cpp(22): warning C4715: 'sigma': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  prob1.8-sigma_calculate.vcxproj -> C:\Users\USER\source\repos\prob1.8-sigma_calculate\x64\Debug\prob1.8-sigma_calculate.exe
