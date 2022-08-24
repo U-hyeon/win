@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\USER\source\repos\prob1.8-find_reversal\prob1.8-find_reversal\main.cpp(63,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+  prob1.8-find_reversal.vcxproj -> C:\Users\USER\source\repos\prob1.8-find_reversal\x64\Debug\prob1.8-find_reversal.exe
