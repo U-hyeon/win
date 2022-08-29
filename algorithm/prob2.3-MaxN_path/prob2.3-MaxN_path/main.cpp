@@ -78,6 +78,40 @@ int MaxN_DP(int arr[][5], int m, int n)
 }
 */
 
+
+// DP 모법답안
+int from[SIZE_M][SIZE_N];
+enum { LEFT, UP };
+
+void MaxN_DP(int arr[][5], int m, int n)
+{
+	int i, j;
+
+	arr[0][0] = Map[0][0];
+	for (i = 1; i < m; i++)
+	{
+		arr[i][0] = arr[i - 1][0] + Map[i][0];
+		from[i][0] = LEFT;
+	}
+	for (j = 1; j < n; j++)
+	{
+		arr[0][j] = arr[0][j - 1] + Map[0][j];
+		from[0][j] = UP;
+	}
+	for (i = 1; i < m; i++)
+	{
+		for (j = 1; j < n; j++)
+		{
+			if (arr[i - 1][j] > arr[i][j - 1])
+				from[i][j] = LEFT;
+			else
+				from[i][j] = UP;
+
+			arr[i][j] = max(arr[i - 1][j], arr[i][j - 1]) + Map[i][j];
+		}
+	}
+}
+
 void print_route(int arr[][5], int m, int n)
 {
 	if (m < 1 || n < 1)
@@ -111,15 +145,15 @@ void main()
 	print_route(MaxNroute, m, n);
 	printf("\nMaxN of all routes (recursive) : %d\n", r);
 
-	/*
+	
 	// reset
 	for (int i = 0; i < SIZE_M; i++)
 		for (int j = 0; j < SIZE_N; j++)
 			MaxNroute[i][j] = 0;
 
 	printf("route : \n");
-	int r = MaxN_DP(Map, m, n);
+	MaxN_DP(MaxNroute, m, n);
 	print_route(MaxNroute, m, n);
-	printf("\nMaxN of all routes (Dynamic Programming) : %d\n", r);
-	*/
+	printf("\nMaxN of all routes (Dynamic Programming) : %d\n", MaxNroute[m-1][n-1]);
+	
 }
