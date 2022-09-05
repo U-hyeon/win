@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\USER\source\repos\prob2.7-longest_increasing_subsequence\prob2.7-longest_increasing_subsequence\main.cpp(36,21): warning C4805: '!=': 연산에 'int' 형식과 'bool' 형식을 함께 사용하는 것은 안전하지 않습니다.
+C:\Users\USER\source\repos\prob2.7-longest_increasing_subsequence\prob2.7-longest_increasing_subsequence\main.cpp(74,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+  prob2.7-longest_increasing_subsequence.vcxproj -> C:\Users\USER\source\repos\prob2.7-longest_increasing_subsequence\x64\Debug\prob2.7-longest_increasing_subsequence.exe

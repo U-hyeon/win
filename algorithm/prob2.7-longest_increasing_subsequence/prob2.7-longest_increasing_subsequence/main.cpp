@@ -6,11 +6,12 @@ int arr[SIZE] = { 10,20,1,9,11,19,2,8,12,18,5,15,4,6,14,16,3,7,13,17 };
 int start[SIZE] = {};
 int end[SIZE] = {};
 
-void find_LIS(int A[], int n)
+int find_LIS(int A[], int n)
 {
 	int decrease[100] = {};
 	int i=0, tmp;
 
+	// display A[ ]
 	tmp = A[i];
 	if (tmp < 10) printf("[%d]  ", tmp);
 	else if (tmp >= 10 && tmp < 100) printf("[%d] ", tmp);
@@ -25,14 +26,15 @@ void find_LIS(int A[], int n)
 	}
 	printf("\n");
 
+	// display decrease[ ]
 	for (i = 0; i < n - 1; i++) printf("  [%d]", decrease[i]);
 	printf("\n");
 	
+	// find increasing subsequence(IS)
 	int cnt_s = 0;
 	int cnt_e = 0;
 	if (decrease[0] != true)
 	{
-		printf("hit start 0\n");
 		start[cnt_s] = 0;
 		cnt_s++;
 	}
@@ -40,26 +42,36 @@ void find_LIS(int A[], int n)
 	{
 		if ( !(decrease[i]) && decrease[i + 1] )
 		{
-			printf("hit end %d\n", i);
-			end[cnt_e] == i;
+			end[cnt_e] = i;
 			cnt_e++;
 		}
 		if ( decrease[i] && !(decrease[i + 1]) )
 		{
-			printf("hit start %d\n", i);
-			start[cnt_s] == i;
+			start[cnt_s] = i;
 			cnt_s++;
 		}
 	}
 
+	// display start/end point of IS
 	printf("start [] : \n");
 	for (i = 0; i < cnt_s; i++) printf("  [%d]", start[i]);
 	printf("\nend [] : \n");
 	for (i = 0; i < cnt_e; i++) printf("  [%d]", end[i]);
 	printf("\n");
+
+	//calculate the length of the longest IS
+	int length = 0;
+	for (i = 0; i < cnt_e; i++) // cnt_e를 기준으로
+	{
+		tmp = end[i] - start[i];
+		if (tmp > length) length = tmp;
+	}
+
+	return length;
 }
 
 void main()
 {
-	find_LIS(arr, SIZE);
+	int tmp = find_LIS(arr, SIZE);
+	printf("the length of LIS = %d\n", tmp);
 }
