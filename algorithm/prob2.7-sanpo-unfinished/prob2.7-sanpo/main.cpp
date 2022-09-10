@@ -17,6 +17,19 @@ int Map[SIZE_M][SIZE_N] = {
 int MaxNroute[SIZE_M][SIZE_N] = {}; //중복계산 방지
 int passed[SIZE_M][SIZE_N] = {}; //지나가면 1
 
+int max(int a, int b)
+{
+	if (a >= b) return a;
+	else return b;
+}
+
+int max(int a, int b, int c)
+{
+	if (a >= b && a >= c) return a;
+	else if (b >= c) return b;
+	else return c;
+}
+
 int max(int a, int b, int c, int d)
 {
 	if (a >= b && a >= c && a >= d) return a;
@@ -25,9 +38,17 @@ int max(int a, int b, int c, int d)
 	else return d;
 }
 
-int path(int m, int n)
+int path(int m, int n, int from) //from : 1=from left, 2=from right, 3=from up, 4=from down
 {
-	if (m == 0 && n == 0) return Map[m][n];
+	if (m == 0 && n == 0)
+	{
+		passed[m][n] = 1;
+		return Map[m][n];
+	}
+
+	int left, right, up, down;
+
+	else if 
 }
 
 void print_route(int arr[][5], int m, int n)
